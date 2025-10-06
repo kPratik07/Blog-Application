@@ -1,0 +1,148 @@
+.home-container {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #ffffff 0%, #a0d8ff 100%);
+  padding: 20px 0;
+}
+
+/* Floating emoji background layer */
+.floating-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.float-item {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.7;
+  animation: floatUp 12s linear infinite;
+}
+
+/* Random positions and delays */
+.float-item:nth-child(1) {
+  left: 15%;
+  animation-duration: 10s;
+}
+.float-item:nth-child(2) {
+  left: 40%;
+  animation-duration: 13s;
+  animation-delay: 2s;
+}
+.float-item:nth-child(3) {
+  left: 65%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+.float-item:nth-child(4) {
+  left: 80%;
+  animation-duration: 11s;
+  animation-delay: 1s;
+}
+.float-item:nth-child(5) {
+  left: 5%;
+  animation-duration: 14s;
+  animation-delay: 3s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(40vh) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) scale(0.9);
+    opacity: 0;
+  }
+}
+
+/* Content styling */
+.home-content {
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  color: #222;
+  padding: 0 20px;
+  margin-top: -100px;
+}
+
+.home-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.home-subtitle {
+  font-size: 1.3rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.home-desc {
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.home-note {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #007acc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 1.8rem;
+  }
+  .home-subtitle {
+    font-size: 1rem;
+  }
+  .home-desc {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+  .home-note {
+    font-size: 1rem;
+  }
+  .float-item {
+    font-size: 1.5rem;
+  }
+  .home-content {
+    margin-top: -300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.6rem;
+  }
+  .home-subtitle {
+    font-size: 1rem;
+  }
+  .home-desc {
+    font-size: 0.95rem;
+  }
+  .float-item {
+    font-size: 1.3rem;
+  }
+  .home-content {
+    margin-top: -200px;
+  }
+}
