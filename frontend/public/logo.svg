@@ -1,0 +1,27 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#gradient1)"/>
+  
+  <!-- Document/Paper Shape -->
+  <rect x="18" y="14" width="28" height="36" rx="2" fill="white" opacity="0.95"/>
+  
+  <!-- Lines representing text -->
+  <line x1="22" y1="22" x2="42" y2="22" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+  <line x1="22" y1="28" x2="42" y2="28" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+  <line x1="22" y1="34" x2="38" y2="34" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+  <line x1="22" y1="40" x2="40" y2="40" stroke="#61dafb" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Pen Icon -->
+  <g transform="translate(38, 38)">
+    <path d="M 0 8 L 8 0 L 12 4 L 4 12 Z" fill="#1976d2"/>
+    <path d="M 0 8 L 4 12 L 0 12 Z" fill="#0d47a1"/>
+  </g>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61dafb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
