@@ -1,7 +1,7 @@
 // API Configuration
 export const API_CONFIG = {
   BASE_URL: import.meta.env.VITE_API_BASE_URL || "http://localhost:4000",
-  TIMEOUT: 10000, // 10 seconds
+  TIMEOUT: 60000, // 60 seconds (for Render free tier cold starts)
   ENDPOINTS: {
     // Auth endpoints
     SIGNUP: "/signup",
